@@ -88,16 +88,17 @@ $APKG $PARAMS "Firefox"
 $APKG $PARAMS "Firefox Developer Edition"
 $APKG $PARAMS "Google Chrome"
 $APKG $PARAMS "Google Drive File Stream"
+$APKG $PARAMS "iTerm2"
 $APKG $PARAMS "Itsycal"
 $APKG $PARAMS "KeepingYouAwake"
 $APKG $PARAMS "Keka"
 $APKG $PARAMS "Microsoft Edge"
+$APKG $PARAMS "nvALT"
 $APKG $PARAMS "Rectangle"
 $APKG $PARAMS "Slack"
 $APKG $PARAMS "TeamViewer"
 $APKG $PARAMS "Tunnelblick"
 $APKG $PARAMS "Visual Studio Code"
-$APKG $PARAMS "nvALT"
 
 exit 0
 ```
