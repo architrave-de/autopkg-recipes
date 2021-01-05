@@ -6,29 +6,20 @@ AutoPkg Recipes for JumpCloud
 
 ### 1. AUTOPKG (1) Install Xcode Command Line Tools
 
+```bash
 #!/bin/bash
-
-# Source: https://github.com/rtrouton/rtrouton_scripts/blob/master/rtrouton_scripts/install_xcode_command_line_tools/install_xcode_command_line_tools.sh
 
 # Installing the Xcode command line tools on 10.7.x or higher
 
 # Save current IFS state
-
 OLDIFS=$IFS
-
 IFS='.' read osvers_major osvers_minor osvers_dot_version <<< "$(/usr/bin/sw_vers -productVersion)"
 
 # restore IFS to previous state
-
 IFS=$OLDIFS
-
 cmd_line_tools_temp_file="/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
 
 # Installing the latest Xcode command line tools on 10.9.x or higher
-
-```bash
-#!/bin/bash
-
 if [[ ( ${osvers_major} -eq 10 && ${osvers_minor} -ge 9 ) || ( ${osvers_major} -eq 11 && ${osvers_minor} -ge 0 ) ]]; then
 	# Create the placeholder file which is checked by the softwareupdate tool
 	# before allowing the installation of the Xcode command line tools.
@@ -62,6 +53,8 @@ fi
 
 exit 0
 ```
+
+Source: https://github.com/rtrouton/rtrouton_scripts/blob/master/rtrouton_scripts/install_xcode_command_line_tools/install_xcode_command_line_tools.sh
 
 ### AUTOPKG (2) Install AutoPkg
 
