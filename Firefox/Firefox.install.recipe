@@ -5,23 +5,37 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Slack and creates a package.</string>
+	<string>Installs the latest version of Firefox.</string>
 	<key>Identifier</key>
-	<string>com.architrave.pkg.Slack</string>
+	<string>com.architrave.install.Firefox</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Slack</string>
+		<string>Firefox</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.architrave.download.Slack</string>
+	<string>com.architrave.download.Firefox</string>
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>dmg_path</key>
+				<string>%pathname%</string>
+				<key>items_to_copy</key>
+				<array>
+					<dict>
+						<key>destination_path</key>
+						<string>/Applications</string>
+						<key>source_item</key>
+						<string>Firefox.app</string>
+					</dict>
+				</array>
+			</dict>
 			<key>Processor</key>
-			<string>AppPkgCreator</string>
+			<string>InstallFromDMG</string>
 		</dict>
 	</array>
 </dict>
