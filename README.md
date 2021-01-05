@@ -100,3 +100,23 @@ $APKG $PARAMS "nvALT"
 
 exit 0
 ```
+
+## Create Recipes
+
+Download `Recipe Robot` from here: https://github.com/homebysix/recipe-robot/releases
+
+Symlink the command line tool:
+
+```bash
+ln -nfs /Applications/Recipe\ Robot.app/Contents/Resources/scripts/recipe-robot /usr/local/bin/recipe-robot
+```
+
+Get an universal download link, f.i. https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+
+Create the recipe:
+
+```bash
+recipe-robot -v "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+```
+
+Done!
