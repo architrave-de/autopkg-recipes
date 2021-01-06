@@ -110,7 +110,7 @@ Download `Recipe Robot` from here: https://github.com/homebysix/recipe-robot/rel
 Symlink the command line tool:
 
 ```bash
-ln -nfs /Applications/Recipe\ Robot.app/Contents/Resources/scripts/recipe-robot /usr/local/bin/recipe-robot
+sudo ln -nfs /Applications/Recipe\ Robot.app/Contents/Resources/scripts/recipe-robot /usr/local/bin/recipe-robot
 ```
 
 Get an universal download link, f.i. https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
