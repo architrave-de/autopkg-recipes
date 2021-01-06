@@ -6,17 +6,17 @@ AutoPkg Recipes for JumpCloud
 
 ### AUTOPKG (1) Install Xcode Command Line Tools
 
-See `scripts/autopkg1.sh`
+See `autopkg1.sh`
 
 Source: https://github.com/rtrouton/rtrouton_scripts/blob/master/rtrouton_scripts/install_xcode_command_line_tools/install_xcode_command_line_tools.sh
 
 ### AUTOPKG (2) Install AutoPkg
 
-See `scripts/autopkg2.sh`
+See `autopkg2.sh`
 
 ### AUTOPKG (3) Install Software
 
-See `scripts/autopkg3.sh`
+See `autopkg3.sh`
 
 ## Create Recipes
 
