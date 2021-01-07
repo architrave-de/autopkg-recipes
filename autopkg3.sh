@@ -25,6 +25,7 @@ $APKG $PARAMS "Rectangle"
 $APKG $PARAMS "Slack"
 $APKG $PARAMS "TeamViewer"
 $APKG $PARAMS "Tunnelblick"
+$APKG $PARAMS "tyke"
 $APKG $PARAMS "Visual Studio Code"
 
 exit 0
